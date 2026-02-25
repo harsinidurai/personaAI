@@ -7,9 +7,11 @@
     "setup": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ..",
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "start": "npm run dev",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev": "node dev-server.js",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend-only": "cd backend && npm run dev",
+    "dev:frontend-only": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",
     "build-all": "cd backend && npm install && cd ../frontend && npm install && npm run build"
   },
