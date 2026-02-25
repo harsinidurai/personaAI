@@ -1,0 +1,8 @@
+node_modules
+.env.local
+.env
+backend
+dev-server.js
+start.js
+*.md
+.git
